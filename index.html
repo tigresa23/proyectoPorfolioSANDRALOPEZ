@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!--  Llamar al archivo style.css -->
+<link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+
+<div class="cointainer"> 
+
+<!------------------------------------------------------------------------------------------------------------>
+<!-- 1)  El cointainer-saludo contiene el saludo y precentación inicial------------------------------------------->
+<div class="cointainer_saludo">
+
+<div class="slider">
+    <ul>
+        <li><img src="imgARCANOS/slider1.jpg" alt=""></li>
+        <li><img src="imgARCANOS/slider2.jpg" alt=""></li>
+        <li><img src="imgARCANOS/slider3.jpg" alt=""></li>
+        <li><img src="imgARCANOS/slider4.jpg" alt=""></li>
+    </ul>
+</div>
+
+    <div class="saludo">
+    <p>Hola</p>
+    <ul>
+        <li>mundo</li>
+        <li>Usuario</li>
+        <li>jj</li>
+        <li>il</li>
+    </div>
+    </ul>
+</div>
+
+<!------------------------------------------------------------------------------------------------------------>
+<!-- 2)  El cointainer-cartas Contiene nombre, cartas y la selección de cartas------------------------------------>
+
+<div class="cointainer-cartas">
+<!--  Dividir el area de la pantalla en cuatro partes.
+. inicio (mi nombre)
+. superior (11 cartas)
+. medio (11 cartas elegidas)
+. inferior (detalles de página)
+-->
+
+<!-- 2.1)  parte inicio: crear div donde va ir mi nombre completo, cada letra sobre una carta   -->
+<div class="inicio"> <!--  Elemento padre de la class  <div class="nombre"> -->
+ <div class="nombre">
+ <!--       <div class="espacio-letra" id="S"><p>S</p></div>
+        <div class="espacio-letra" id="a"><p>A</p></div>
+        <div class="espacio-letra" id="n"><p>N</p></div>
+        <div class="espacio-letra" id="d"><p>D</p></div>
+        <div class="espacio-letra" id="r"><p>R</p></div>
+        <div class="espacio-letra" id="a"><p>A</p></div>
+        <div class="espacio-letra" id="L"><p>L</p></div>
+        <div class="espacio-letra" id="o"><p>O</p></div>
+        <div class="espacio-letra" id="p"><p>P</p></div>
+        <div class="espacio-letra" id="e"><p>E</p></div>
+        <div class="espacio-letra" id="z"><p>Z</p></div>
+    </div>
+</div>
+-->
+<span style="--l: 'S' ;">S</span>
+<span style="--l: 'a' ;">a</span>
+<span style="--l: 'n' ;">n</span>
+<span style="--l: 'd' ;">d</span>
+<span style="--l: 'r' ;">r</span>
+<span style="--l: 'a' ;">a</span>
+<span style="--l: 'L' ;">L</span>
+<span style="--l: 'o' ;">o</span>
+<span style="--l: 'e' ;">p</span>
+<span style="--l: 'p' ;">e</span>
+<span style="--l: 'z' ;">z</span>
+</div>
+</div>
+
+
+
+
+
+<!-- 2.2)  parte superior: crear 11 div para mis 11 cartas de tarot  ----------------------------------------------->
+
+<div class="superior">
+
+    <div class="casa-carta">
+        <div class="espacio-carta"><img src="imgARCANOS/ElEmperador.jpg" id="ElEmperador"></div>
+        <div class="espacio-carta" id="ElErmitaño"><img src="imgARCANOS/ElErmitaño.jpg"></div>
+        <div class="espacio-carta" id="ElJuicio"><img src="imgARCANOS/ElJuicio.jpg"></div>
+        <div class="espacio-carta" id="ElLoco"><img src="imgARCANOS/ElLoco.jpg"></div>
+        <div class="espacio-carta" id="ElMundo"><img src="imgARCANOS/ElMundo.jpg"></div>
+        <div class="espacio-carta" id="ElMago"><img src="imgARCANOS/ElMago.jpg"></div>
+        <div class="espacio-carta" id="ElPapa"><img src="imgARCANOS/ElPapa.jpg"></div>
+        <div class="espacio-carta" id="ElSol"><img src="imgARCANOS/ElSol.jpg"></div>
+        <div class="espacio-carta" id="LaEmperatriz"><img src="imgARCANOS/LaEmperatriz.jpg"></div>
+        <div class="espacio-carta" id="LaEstrella"><img src="imgARCANOS/LaEstrella.jpg"></div>
+        <div class="espacio-carta" id="LosEnamorados"><img src="imgARCANOS/LosEnamorados.jpg"></div>
+    </div>
+</div>
+
+<!-- 2.3)  parte del medio: crear 11 div que comenzarán vacios, hasta que yo vaya eligiendo cartas
+    del div casa. Las cartas elegidas irán apareciendo en estos espacios.
+que van a agrandar su tamaño
+y se van a ir superponiendo
+ -->
+
+ <!-- img src="" voy a dejar vacio al atributo src ya que quiero que inicie sin imagen
+    recordar que el id de la imagen debo colocarla detrás del atributo src
+ -->
+<div class="medio">
+    <div class="casa-elegida">
+    <div class="espacio-elegida" ><img src="" id="ElEmperador1"></div>
+    <div class="espacio-elegida" ><img src="" id="ElErmitaño1"></div>
+    <div class="espacio-elegida" ><img src="" id="ElJuicio1"></div>
+    <div class="espacio-elegida" ><img src="" id="ElLoco1"></div>
+    <div class="espacio-elegida" ><img src="" id="ElMundo1"></div>
+    <div class="espacio-elegida" ><img src="" id="ElMago1"></div>
+    <div class="espacio-elegida" ><img src="" id="ElPapa1"></div>
+    <div class="espacio-elegida" ><img src="" id="ElSol1"></div>
+    <div class="espacio-elegida" ><img src="" id="LaEmperatriz1"></div>
+    <div class="espacio-elegida" ><img src="" id="LaEstrella1"></div>
+    <div class="espacio-elegida" ><img src="" id="LosEnamorados1"></div>
+</div>
+</div>
+
+
+<!-- 3) cvProyectos -------------------------------------------------------------------------------->
+<div class="cvProyectos"></div>
+<!-- 4) contacto ---------------------------------------------------------------------------------->
+<div class="contacto"></div>
+<!-- 5) detalles ------------------------------------------------------------------------------------>
+<div class="detalles"></div>
+
+</div>
+</div>
+<!-- Llamar al archivo javascript -->
+<script src="javascript.js"></script>
+
+
+</body>
+</html>
