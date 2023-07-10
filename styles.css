@@ -32,13 +32,13 @@ body{
 /* ----------  1)  cointainer-saludo --------------------------------------------------------- */
 .cointainer_saludo{
     background-color: white;
-    width: 100vw; /*Con esto me aseguro que la class cointainer ocupe todo el ancho*/
+    width: 100%; /*Con esto me aseguro que la class cointainer ocupe todo el ancho*/
     height: 650px; /* alto del recuadro*/
 }
 
 /* --------- 1.1)  slider automático con HTML y CSS -------*/
 .slider {
-    width: 95%;
+    width: 100%;
     margin: auto;
     overflow: hidden;
 }
@@ -150,8 +150,6 @@ Elemento padre de la class  <div class="nombre"> */
     height: 110px;
     margin-top: 20px; /* margen de arriba */
     margin:5px; /* margen de abajo */
-    margin-left: 10px;
-    margin-right: 10px;
     position: relative;
 }
 /*.espacio-letra {
@@ -176,7 +174,7 @@ Elemento padre de la class  <div class="nombre"> */
 .nombre span {
     font-size: 40pt; /* tamaño letra */
     font-weight: bold; /* letra negrita */
-    margin-left: 10px;
+    margin-left: -7px;
     margin-right: 10px;
     position: relative;
     font-family: "comic";
@@ -263,7 +261,7 @@ Elemento padre de la class  <div class="casa-carta"> */
 
 .casa-carta { /* esta es la class que hace referencia al div que contiene todas las 11 cartas visibles 
     su mención en el css ubica las cartas juntas */
-    background-color: rgb(224, 228, 20);
+    background-color: white;
     width: 100vw;
     height: 160px;
     margin-top: 5px; /* margen de arriba */
@@ -289,7 +287,6 @@ Elemento padre de la class  <div class="casa-carta"> */
     /* transform: translatey(-40px);para que tenga ese movimiento deseado sobre el eje y*/
     transition: 300ms; /* para que se quite el  */
     filter: none; /* para que se quite el filtro que le  pusimos de la sombra del filter: drop-shadow*/
-
 }
 
   
@@ -310,10 +307,9 @@ Elemento padre de la class  <div class="casa-elegida">*/
     position: relative;
 }
 
-
 .casa-elegida { /* esta es la class que hace referencia al div que contiene todas las 11 cartas visibles 
     su mención en el css ubica las cartas juntas */
-    width: 100vw; /* todo el ancho de la pag */
+    width: 90%; /* todo el ancho de la pag */
     display: flex;
     justify-content: space-around; /* centra a los hijos en el eje horizontal*/
     align-items: center; /* alinea a su hijo sobre el eje vertical, en este caso la class espacio-carta */
@@ -322,12 +318,29 @@ Elemento padre de la class  <div class="casa-elegida">*/
 
 
 .espacio-elegida {
-    border: 2px solid white;
-    width: 50px; /* ancho de los elementos */
-    height: 100px;  /* altura de los elementos */
+    width: 10px; /* ancho de los elementos */
+    height: 330px;  /* altura de los elementos */
     margin: 15px;  /*  espacio entre el div de arriba  */
+    margin-left: -8%;
     justify-content: space-between;
 }
+
+.espacio-elegida :hover{
+    cursor: crosshair;
+    width: 250px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+
+/*
+.espacio-elegida {
+    border: 2px solid white;
+    width: 50px; /* ancho de los elementos */
+    /* height: 100px;  altura de los elementos */
+    /* margin: 15px;   espacio entre el div de arriba  
+    justify-content: space-between;*/
+
 /* ----------  3) cvProyectos  ----------------------------------------- */
 
 .cvProyectos {
